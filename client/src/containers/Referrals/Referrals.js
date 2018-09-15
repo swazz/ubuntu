@@ -11,7 +11,7 @@ class Referrals extends React.Component {
     address: "",
     howLongBeenHomeless: ""
   };
-  onSubmigit t = e => {
+  onSubmigit  = e => {
     e.preventDefault();
     console.log(this.state);
   };
