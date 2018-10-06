@@ -12,6 +12,7 @@ import VolunteersForm from "../../components/VolunteersForm";
 import Login from "../../components/Login/Login";
 import axios from "axios";
 import ShelterHome from "../Shelters/ShelterHome";
+import DonateUs from "../DonateUs/DonateUs";
 //import Shelters from "../../components/Shelters";
 
 class App extends Component {
@@ -41,6 +42,8 @@ class App extends Component {
           <Link to="/organisations-register">Register Organisation</Link> |{" "}
           <Link to="/Shelters">Shelters</Link> |{" "}
           <Link to="/contact">Contact</Link> |{" "}
+          <Link to="/Donate">Donate</Link> |{" "}
+
           {!token && <Link to="/login">Login</Link>}
           {!!token && (
             <button className="btn btn-primary" onClick={this.logout}>
@@ -56,6 +59,7 @@ class App extends Component {
           <Route path="/users" component={Users} />
           <Route path="/Volunteers" component={VolunteersForm} />
           <Route path="/login" component={Login} />
+          <Route path="/donate" component={DonateUs}/>
           <Route
             path="/organisations-register"
             component={OrganisationsRegister}
