@@ -33,6 +33,7 @@ class OrganisationsRegister extends React.Component {
       document.getElementById("organisation-form").reset();
       //valid
       this.setState({ formValid: true });
+      alert("You been registered successfully");
       api.saveUser(this.state).then(() => {
         this.props.history.push("/login");
       });
