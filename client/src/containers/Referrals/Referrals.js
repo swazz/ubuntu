@@ -6,12 +6,12 @@ class Referrals extends React.Component {
   state = {
     firstName: "",
     lastName: "",
+    dateOfBirth: "",
     email: "",
     phoneNumber: "",
-    address: "",
-    howLongBeenHomeless: ""
+    address: ""
   };
-  onSubmigit  = e => {
+  onSubmigit = e => {
     e.preventDefault();
     console.log(this.state);
   };
@@ -31,8 +31,8 @@ class Referrals extends React.Component {
         />
         <br />
         <input
-          placeholder="Age"
-          onChange={e => this.setState({ Age: e.target.value })}
+          placeholder="Date Of Birth"
+          onChange={e => this.setState({ dateOfBirth: e.target.value })}
         />
         <br />
         <input
@@ -49,24 +49,14 @@ class Referrals extends React.Component {
         <br />
         <input
           placeholder="address"
-          value={this.state.password}
-          onChange={e => this.setState({ password: e.target.value })}
-        />
-        <br />
-
-        <textarea
-          rows="4"
-          cols="22"
-          placeholder="how long been homeless"
-          value={this.state.subject}
+          value={this.state.address}
           onChange={e => this.setState({ address: e.target.value })}
         />
-
         <br />
+
         <button onClick={e => this.onSubmit(e)}>Submit</button>
       </form>
     );
   }
 }
 export default Referrals;
-                                                                                                                                                                         
