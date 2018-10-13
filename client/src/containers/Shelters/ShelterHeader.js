@@ -56,7 +56,7 @@ const ShelterHeader = props => {
               <Link className="nav-link" to={`/shelters/${shelter.shelter_id}/who-do-we-support`}>Who do we support</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled"  href={`/shelters/${shelter.shelter_id}/donations`}>
+              <a className="nav-link disabled"  href={`/donate`}>
                 Donations
               </a>
             </li>
